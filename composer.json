@@ -4,7 +4,7 @@
   "description": "Jacobs library for handling handlebars.js templates and rendering",
   "keywords": ["Drupal", "Jacobs"],
   "license": "GPL-2.0+",
-  "homepage": "https://github.com/parvateesamk/jacobs",
+  "homepage": "https://github.com/parvateesamk/handlebars_theme_handler",
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
