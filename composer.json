@@ -1,0 +1,19 @@
+{
+  "name": "drupal/handlebars_theme_handler",
+  "type": "drupal-module",
+  "description": "Jacobs library for handling handlebars.js templates and rendering",
+  "keywords": ["Drupal", "Jacobs"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/parvateesamk/jacobs",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Parvateesamk\\handlebars_theme_handler\\": "src/"
+    }
+  },
+  "require": {
+    "xamin/handlebars.php": "^0.10.4",
+    "symfony/config": "3.*|4.*|5.*|6.*",
+    "symfony/finder": "3.*|4.*|5.*|6.*"
+  }
+}
