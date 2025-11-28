@@ -14,6 +14,13 @@ class ThemeFieldProcessorManager extends DefaultPluginManager {
 
   protected $settings;
 
+/**
+ * Map of entity processors keyed by entity_type.bundle.view_mode.
+ *
+ * @var array
+ */
+protected $plugin_map = [];
+
   /**
    * Constructor for TaskPluginManager objects.
    *
@@ -97,7 +104,7 @@ class ThemeFieldProcessorManager extends DefaultPluginManager {
    */
   protected function getProcessorMap() {
 
-    if (!isset($this->plugin_map)) {
+    if (empty($this->plugin_map)) {
       $plugins = $this->getDefinitions();
       foreach ($plugins as $plugin_id => $plugin) {
         foreach ($plugin['field_types'] as $type) {

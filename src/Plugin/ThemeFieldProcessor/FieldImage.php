@@ -37,6 +37,11 @@ class FieldImage extends ThemeFieldProcessorBase {
   protected $fileUrlGenerator;
 
   /**
+   * @var \Drupal\handlebars_theme_handler\Plugin\ThemeEntityProcessorManager
+   */
+  protected $entityProcessor;
+
+  /**
    * @param array $configuration
    * @param string $plugin_id
    * @param mixed $plugin_definition
